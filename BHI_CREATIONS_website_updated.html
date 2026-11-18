@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BHI CREATIONS — Design • Create • Inspire. Creative graphic design for brands, creators and small businesses.">
+<meta name="theme-color" content="#080808">
+<title>BHI CREATIONS | Design • Create • Inspire</title>
+<style>
+:root{--bg:#080808;--panel:#121212;--gold:#e8b84b;--gold2:#ffd978;--white:#f7f4ec;--muted:#b8b2a6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#080808ed;border-bottom:1px solid #2b2417;backdrop-filter:blur(12px)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:2px;font-size:1.15rem}.brand b{color:var(--gold)}.navlinks{display:flex;gap:24px;color:#ddd;font-size:.92rem}.navlinks a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid #55421e;color:var(--gold);padding:8px 12px;border-radius:8px}
+.hero{padding:88px 0 76px;background:radial-gradient(ellipse at 78% 20%,#5a3d142e,transparent 42%),linear-gradient(135deg,#0a0a0a,#101010)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:48px}.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:.78rem;font-weight:bold}
+h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:1.02;margin:15px 0 20px;letter-spacing:-2px}h1 span{color:var(--gold)}
+.lead{font-size:1.12rem;color:#d1ccc2;max-width:600px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 21px;border-radius:9px;font-weight:800;border:1px solid var(--gold);transition:.2s}.btn.primary{background:var(--gold);color:#15110a}.btn:hover{transform:translateY(-2px);background:var(--gold2);color:#111}
+.hero-card{border:1px solid #6a5128;border-radius:22px;padding:34px;background:linear-gradient(145deg,#1a1711,#0d0d0d);box-shadow:0 25px 70px #0008;text-align:center}
+.monogram{width:160px;height:160px;margin:0 auto 20px;border:2px solid var(--gold);border-radius:28px;display:grid;place-items:center;color:var(--gold);font-size:4rem;font-weight:900;letter-spacing:-8px;transform:rotate(-4deg);box-shadow:0 0 45px #e8b84b22}
+.hero-card h2{margin:0;font-size:1.5rem;letter-spacing:3px}.tag{color:var(--gold);letter-spacing:3px;font-size:.78rem;margin-top:8px}
+section{padding:76px 0}.section-head{text-align:center;margin-bottom:38px}.section-head h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service,.price,.sample,.about-box{background:var(--panel);border:1px solid #2c281f;border-radius:15px;padding:23px}.service .ico{font-size:1.7rem}.service h3,.sample h3{margin:8px 0}.service p,.sample p,.about-box p{color:var(--muted);font-size:.94rem;margin:0}
+.alt{background:#0e0e0e}.price{padding:22px}.price h3{margin:0 0 7px}.amount{font-size:1.8rem;color:var(--gold);font-weight:900}.price small{color:var(--muted)}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.sample{min-height:185px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(145deg,#30220e,#111 70%);overflow:hidden;position:relative}.sample:before{content:"BHI";position:absolute;right:12px;top:-12px;font-size:5rem;font-weight:900;color:#e8b84b16}.sample>*{position:relative}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.about-box h3{color:var(--gold);margin-top:0}
+form{display:grid;gap:13px;max-width:680px;margin:auto}label{font-size:.9rem;color:#e7dfcf}input,select,textarea{width:100%;padding:13px;border:1px solid #51442b;border-radius:9px;background:#111;color:white;font:inherit}textarea{min-height:120px;resize:vertical}.note{font-size:.82rem;color:var(--muted)}
+footer{border-top:1px solid #332817;padding:28px 0;color:var(--muted);font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:62px 0}.grid,.portfolio-grid{grid-template-columns:1fr 1fr}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#0b0b0b;padding:18px 4%;flex-direction:column;border-bottom:1px solid #332817}.navlinks.show{display:flex}.menu{display:block}}
+@media(max-width:480px){.grid,.portfolio-grid{grid-template-columns:1fr}.hero-card{padding:25px}.monogram{width:130px;height:130px;font-size:3.2rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home"><b>BHI</b> CREATIONS</a>
+<div class="navlinks" id="links"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<button class="menu" onclick="document.getElementById('links').classList.toggle('show')" aria-label="Open menu">Menu</button>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Graphic Design • Digital Creativity</div><h1>Ideas into <span>impact.</span></h1>
+<p class="lead">Creative designs that help creators, small businesses and growing brands stand out. Thoughtful visuals, clean layouts and a premium finish.</p>
+<div class="actions"><a class="btn primary" href="#contact">Start a Project</a><a class="btn" href="#services">Explore Services</a></div>
+<p class="tag">DESIGN • CREATE • INSPIRE</p></div>
+<div class="hero-card"><div class="monogram">BH</div><h2>BHI CREATIONS</h2><div class="tag">YOUR VISION, OUR CREATIVITY</div></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we create</div><h2>Our Services</h2><p>Visuals for your brand, page or next big idea.</p></div>
+<div class="grid">
+<div class="service"><div class="ico">✦</div><h3>Logo Design</h3><p>Memorable identity concepts for your brand.</p></div>
+<div class="service"><div class="ico">▣</div><h3>Instagram Posts</h3><p>Scroll-stopping posts and social media creatives.</p></div>
+<div class="service"><div class="ico">▶</div><h3>YouTube Thumbnails</h3><p>Clear, bold thumbnail concepts for videos.</p></div>
+<div class="service"><div class="ico">▤</div><h3>Business Banners</h3><p>Promotional banners for digital platforms.</p></div>
+<div class="service"><div class="ico">▧</div><h3>Visiting Cards</h3><p>Simple, professional contact-card layouts.</p></div>
+<div class="service"><div class="ico">✉</div><h3>Invitation & Brand Kits</h3><p>Invitations and coordinated brand visuals.</p></div>
+</div></div></section>
+<section class="alt" id="prices"><div class="wrap"><div class="section-head"><div class="eyebrow">Starter guide</div><h2>Sample Price List</h2><p>Indicative starting prices in Indian rupees.</p></div>
+<div class="grid">
+<div class="price"><h3>Logo Design</h3><div class="amount">₹199</div><small>Starting price</small></div>
+<div class="price"><h3>Social Post / Thumbnail</h3><div class="amount">₹99</div><small>Starting price</small></div>
+<div class="price"><h3>Visiting Card</h3><div class="amount">₹149</div><small>Starting price</small></div>
+<div class="price"><h3>Poster Design</h3><div class="amount">₹199</div><small>Starting price</small></div>
+<div class="price"><h3>Business Banner</h3><div class="amount">₹249</div><small>Starting price</small></div>
+<div class="price"><h3>Brand Kit</h3><div class="amount">₹499</div><small>Starting price</small></div>
+</div><p class="note" style="text-align:center;margin-top:18px">Final price, revisions and delivery date are confirmed before a project begins.</p>
+</div></section>
+<section id="portfolio"><div class="wrap"><div class="section-head"><div class="eyebrow">Creative direction</div><h2>Sample Concepts</h2><p>Illustrative portfolio placeholders — not client work.</p></div>
+<div class="portfolio-grid">
+<div class="sample"><h3>Luxury Brand Identity</h3><p>Black & gold logo direction</p></div>
+<div class="sample"><h3>Creator Thumbnail</h3><p>Bold video cover concept</p></div>
+<div class="sample"><h3>Social Media Campaign</h3><p>Consistent post layout</p></div>
+</div></div></section>
+<section class="alt" id="about"><div class="wrap"><div class="section-head"><div class="eyebrow">Our approach</div><h2>About BHI CREATIONS</h2></div>
+<div class="about-grid"><div class="about-box"><h3>Creative with purpose</h3><p>We focus on clean, useful and memorable graphic design for individuals, creators and small businesses.</p></div><div class="about-box"><h3>India + Worldwide</h3><p>Our goal is to make creative design accessible to people and projects in India and beyond. Availability is confirmed when you enquire.</p></div></div>
+</div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Let's create something</div><h2>Start a Project</h2><p>Contact BHI CREATIONS for creative, digital and professional services.</p></div>
+<form id="contactForm">
+<div><label for="name">Your name</label><input id="name" required maxlength="70" placeholder="Enter your name"></div>
+<div><label for="service">What do you need?</label><select id="service" required><option value="">Choose a service</option><option>Logo Design</option><option>Instagram Post</option><option>YouTube Thumbnail</option><option>Business Banner</option><option>Visiting Card</option><option>Invitation / Brand Kit</option><option>Other</option></select></div>
+<div><label for="brief">Project brief</label><textarea id="brief" required maxlength="1000" placeholder="Describe your design idea (do not include private information)"></textarea></div>
+<div class="about-box"><h3>Contact Details</h3><p><a href="tel:+919241226739">Phone / WhatsApp: 9241226739</a></p><p><a href="mailto:ps3417822@gmail.com">Email: ps3417822@gmail.com</a></p><p>Location: Patna, Bihar, India</p><p>Designation: Founder &amp; CEO</p><p><a class="btn primary" href="https://wa.me/919241226739" target="_blank" rel="noopener">Chat on WhatsApp</a></p></div>
+<p class="note">The enquiry form above is a visual demo. Use the phone, WhatsApp or email links to contact BHI CREATIONS.</p>
+</form></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong style="color:#e8b84b">BHI CREATIONS</strong> · DESIGN • CREATE • INSPIRE</div><div>© <span id="year"></span> BHI CREATIONS. All rights reserved.</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('links').classList.remove('show')));</script>
+</body></html>
